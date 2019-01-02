@@ -1,13 +1,13 @@
-set pythonJsonPath="\\***\quectel\ÑĞ·¢²¿\²âÊÔ²¿\Èí¼ş²âÊÔ\ST-4G\4G_QAT\QAT_9x07_GW_Excel\***"
-set RemoteQATCasePath="\\***\quectel\ÑĞ·¢²¿\²âÊÔ²¿\Èí¼ş²âÊÔ\ST-4G\4G_QAT\QAT_9x07_GW_Excel\"
-set FileName=EC20CEHBR06A03V01M1G_GWWS
+set pythonJsonPath="\\***\quectel\ç ”å‘éƒ¨\æµ‹è¯•éƒ¨\è½¯ä»¶æµ‹è¯•\ST-4G\4G_QAT\QAT_9x07_GW_Excel\***"
+set RemoteQATCasePath="\\***\quectel\ç ”å‘éƒ¨\æµ‹è¯•éƒ¨\è½¯ä»¶æµ‹è¯•\ST-4G\4G_QAT\QAT_9x07_GW_Excel\"
+set FileName=****
 set RemoteFilePath="\\***\quectel\Project\Module Project Files\LTE Project\MDM9x07\EC20-CEHB-GWWS\Release\"
 set platform=9x07
 set branch=GW
 set CustomKey=WS
 
 set LocalFilePath=F:\
-::±¾µØ±£´æÅÌ·û£¬±£´æÈí¼ş°æ±¾¡¢QAT¹¤¾ß¡¢QFLASH¹¤¾ß¡¢×Ô¶¯»¯caseµÈ,Í³Ò»·Åµ½FÅÌ£¬²»Òª¸Ä¶¯
+::æœ¬åœ°ä¿å­˜ç›˜ç¬¦ï¼Œä¿å­˜è½¯ä»¶ç‰ˆæœ¬ã€QATå·¥å…·ã€QFLASHå·¥å…·ã€è‡ªåŠ¨åŒ–caseç­‰,ç»Ÿä¸€æ”¾åˆ°Fç›˜ï¼Œä¸è¦æ”¹åŠ¨
 set FileNameSuf=.zip
 
 set DMPORT1=-3
@@ -22,21 +22,21 @@ set UART4=COM13
 
 set Burdrate=-9***
 set QATBatPath=F:\9x07_GW_QAT\
-set VBAT_Disusedcard_function01=QAT_9X07_GW_*_common_VBAT_·Ï¿¨_20180823
+set VBAT_Disusedcard_function01=QAT_9X07_GW_*_common_VBAT_åºŸå¡_20180823
 set QFlashFilePath=F:\**\Release\
 
-set VBATfunction01=QAT_9X07_GW_*_common_VBAT_¹¤³§°æ±¾ÑéÖ¤·ÇÊı´«_20180628
+set VBATfunction01=QAT_9X07_GW_*_common_VBAT_å·¥å‚ç‰ˆæœ¬éªŒè¯éæ•°ä¼ _20180628
 set VBATfunction02=QAT_9X07_GW_*_stand_WS_CQ_VBAT_20181008
-set VBATfunction03=QAT_9X07_GW_*_common_VBAT_Õı³£¿¨_20180823
+set VBATfunction03=QAT_9X07_GW_*_common_VBAT_æ­£å¸¸å¡_20180823
 set VBATfunction04=QAT_9x07_GW_*_common_VBAT_20180919
 
-set AUTOfunction01=QAT_9x07_GW_**_common_Auto_¹¤³§°æ±¾ÑéÖ¤_20180810
+set AUTOfunction01=QAT_9x07_GW_**_common_Auto_å·¥å‚ç‰ˆæœ¬éªŒè¯_20180810
 set AUTOfunction02=QAT_9x07_GW_**_common_Auto_20180608
-set AUTOfunction03=QAT_9X07_GW_**_common_Auto_Êı´«_20180427
+set AUTOfunction03=QAT_9X07_GW_**_common_Auto_æ•°ä¼ _20180427
 set AUTOfunction04=QAT_9x07_GW_**_common_Auto_20180426
 set AUTOfunction05=QAT_9x07_GW_**_stand_WS_CQ_Auto_20180917
 set AUTOfunction06=QAT_9X07_GW_**_common_Auto_20180426
-set AUTOfunction07=QAT_9x07_GW_**_common_Auto_¿Í»§ÎÊÌâ_20180928
+set AUTOfunction07=QAT_9x07_GW_**_common_Auto_å®¢æˆ·é—®é¢˜_20180928
 set AUTOfunction08=QAT_9x07_GW_**_common_Auto_20180522
 set AUTOfunction09=QAT_9x07_GW_**_common_Auto_20180302
 set AUTOfunction10=QAT_9x07_GW_**_common_Auto_20180903
@@ -69,7 +69,7 @@ for /r %RemoteQATCasePath% %%i in (*_%CustomKey%_*.xlsx) do copy %%i %Deployment
 ::for /r %RemoteQATCasePath% %%i in (*.json) do copy %%i "F:\json\"
 
 ::ping /n 1200 127.0.0.1 >nul
-::´Ë´¦²»ĞèÒªcopyµ½¹¤×÷Â·¾¶ÁË£¬Ö±½ÓÔÚ²¿ÊğÂ·¾¶Ö´ĞĞ¼´¿É
+::æ­¤å¤„ä¸éœ€è¦copyåˆ°å·¥ä½œè·¯å¾„äº†ï¼Œç›´æ¥åœ¨éƒ¨ç½²è·¯å¾„æ‰§è¡Œå³å¯
 ::copy %DeploymentCommonPath% %WorkspaceCommonPath%
 ::copy %DeploymentCustomPath% %WorkspaceCustomPath%
 
@@ -104,7 +104,7 @@ ping /n 30 127.0.0.1 >nul
 echo [%date%%time%]"Prepare to download firmware.."
 cd %QFlashFilePath%
 
-::Ö´ĞĞrun.bat£¬ÔËĞĞcase
+::æ‰§è¡Œrun.batï¼Œè¿è¡Œcase
 @echo on
 cd\
 F:
@@ -136,7 +136,7 @@ for /r %LocalFilePath%%FileName% %%i in (ENPRG9x0?.mbn) do if exist %%i QFlash_V
 echo [%date%%time%]"Start to download firmware..DMPORT2 UARTPORT-%UART2%"
 ping /n 60 127.0.0.1 >nul
 
-::Éı¼¶Íê³Éºó£¬ÅäÖÃSetting
+::å‡çº§å®Œæˆåï¼Œé…ç½®Setting
 
 cd "F:\dist\AllFileAutoSetting"
 AllFileAutoSetting.exe "%DeploymentCommonPath%" "%DeploymentCustomPath%" %pythonJsonPath%
